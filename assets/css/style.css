@@ -1,0 +1,33 @@
+body {
+	background-image: url("http://bitpine.com/av/storage/4e3a1278/av5e0e7c3a9d6b04c46c3.jpg");
+}
+
+h1 {
+	padding: 20px;
+	font-size: 40px;
+	color: black;
+	background-color: beige;
+	margin-right: 200px;
+}
+
+#description {
+	padding: 10px;
+    background-color: beige;
+    border: black;
+    color: black;
+    margin-right: 200px;
+}
+
+#empty-div1 {
+	padding: 20px;
+	background-color: beige;
+	margin-right: 200px;
+}
+
+.images {
+	margin-left: 10px;
+}
+
+
+
+
