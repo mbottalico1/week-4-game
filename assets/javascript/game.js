@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
-var computerChoices = [Math.floor(Math.random() * 120)];
+var computerChoices = Math.floor(Math.random() * 120);
 
 var wins = 0;
 var losses = 0;
-var yourNumbers = [];
-var possibleNumbers = null;
+var total = 0;
 
-var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+var crystals = Math.floor(Math.random * 12);
 
 $('.images').click(function(event) {
+	total = total + crystals;
 	
 }
 
