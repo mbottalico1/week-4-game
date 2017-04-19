@@ -3,10 +3,11 @@ var wins = 0;
 var losses = 0;
 var myTotal = 0;
 
-var crystalOne = Math.floor(Math.random * 12 + 1);
-var crystalTwo = Math.floor(Math.random * 12 + 1);
-var crystalThree = Math.floor(Math.random * 12 + 1);
-var crystalFour = Math.floor(Math.random * 12 + 1);
+var crystalOne = Math.floor((Math.random * 12) + 1);
+var crystalTwo = Math.floor((Math.random * 12)+ 1);
+var crystalThree = Math.floor((Math.random * 12) + 1);
+var crystalFour = Math.floor((Math.random * 12) + 1);
+
 
 var updateTotal = function() {
 
@@ -35,11 +36,13 @@ var game = function() {
     }
 }
 
-$('#empty-div1').append(computerChoices);
-$('#empty-div2').append(myTotal);
 
 
 $(document).ready(function(){
+
+
+$('#empty-div1').html(computerChoices);
+
 
 $('#crystal1').click(function(event) {
 	myTotal = myTotal + crystalOne;
@@ -65,7 +68,7 @@ $('#crystal4').click(function(event) {
 });
 
 
-var restart = function() {
+var reset = function() {
 	var crystalOne = Math.floor(Math.random * 12 + 1);
 	var crystalTwo = Math.floor(Math.random * 12 + 1);
 	var crystalThree = Math.floor(Math.random * 12 + 1);
@@ -78,6 +81,8 @@ var restart = function() {
 	$('#empty-div1').empty();
 	$('#empty-div1').append(computerChoices);
 
+	$('#empty-div2').empty();
+	$('#empty-div2').append(myTotal);
 }
 
 
