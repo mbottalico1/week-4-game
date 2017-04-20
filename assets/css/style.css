@@ -3,32 +3,56 @@ body {
 }
 
 h1 {
+	text-align: center;
 	padding: 20px;
 	font-size: 40px;
 	color: black;
-	background-color: beige;
-	margin-right: 200px;
+	background-color: #F0F8FF;
+	font-family: 'UnifrakturCook', cursive;
+
 }
 
 #description {
 	padding: 10px;
-    background-color: beige;
+	text-align: center;
     border: black;
     color: black;
-    margin-right: 200px;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 #empty-div1 {
 	padding: 20px;
-	background-color: beige;
-	margin-right: 200px;
+	background-color: #F0F8FF;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'UnifrakturCook', cursive;
+
+}
+
+#empty-div2 {
+	padding: 20px;
+	background-color: #F0F8FF;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'UnifrakturCook', cursive;
 }
 
 .images {
-	margin-left: 10px;
+	text-align: center;
 }
 
+#your-total {
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Oswald', sans-serif;
+}
 
+#winloss {
+	text-align: center;
+	margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}	
 
 
 

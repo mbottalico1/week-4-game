@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|UnifrakturCook:700" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,10 +17,10 @@
 	<br><br>
 	<p id="description">At the start of this game, the computer will generate a random number between 19-120. <br>
 	<br>
-	When you click on a crystal it will generate a random number, when you click on another <br>
+	When you click on a crystal it will generate a random number, when you click on another <br><br>
     crystal that will also generate a random number and add it to the previous updated number. <br>
     <br>
-	The goal of this game is to match your number with the computer generated number.<br>
+	The goal of this game is to match your number with the computer generated number.<br><br>
 	If you match the number, YOU WIN! If you go over that number then YOU LOSE!
 	</p>
 
@@ -55,11 +55,13 @@
 
 	<br>
 
-	<p>Your total score is</p>
+	<p id="your-total">Your total score is</p>
 
 
 	<div id="empty-div2"></div>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>

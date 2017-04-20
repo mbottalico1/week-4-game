@@ -1,12 +1,14 @@
+$(document).ready(function(){
+
 var computerChoices = Math.floor((Math.random() * 101) + 19);
 var wins = 0;
 var losses = 0;
 var myTotal = 0;
 
-var crystalOne = Math.floor((Math.random * 12) + 1);
-var crystalTwo = Math.floor((Math.random * 12)+ 1);
-var crystalThree = Math.floor((Math.random * 12) + 1);
-var crystalFour = Math.floor((Math.random * 12) + 1);
+var crystalOne = Math.floor((Math.random() * 12) + 1);
+var crystalTwo = Math.floor((Math.random() * 12)+ 1);
+var crystalThree = Math.floor((Math.random() * 12) + 1);
+var crystalFour = Math.floor((Math.random() * 12) + 1);
 
 
 var updateTotal = function() {
@@ -19,72 +21,75 @@ var updateTotal = function() {
 
 	$('#losing').empty();
 	$('#losing').append(losses);
+
 }
+
 
 
 var game = function() {
 	if (myTotal === computerChoices) {
 		wins++;
 		alert('YOU WIN!');
-		restart();
+		reset();
 	} else if(myTotal > computerChoices) {
 		losses++;
 		alert('YOU LOSE! Maybe next time!');
-		restart();
-	} else {
-		updateTotal();
-    }
+		reset();
+	} 
 }
 
 
 
-$(document).ready(function(){
 
 
 $('#empty-div1').html(computerChoices);
 
+$('#empty-div2').html(myTotal);
 
 $('#crystal1').click(function(event) {
 	myTotal = myTotal + crystalOne;
-	game();
+	$('#empty-div2').html(myTotal);
+	game();	
 	
 })
 
 $('#crystal2').click(function(event) {
 	myTotal = myTotal + crystalTwo;
+	$('#empty-div2').html(myTotal);
 	game();
 })
 
 $('#crystal3').click(function(event) {
 	myTotal = myTotal + crystalThree;
+	$('#empty-div2').html(myTotal);
 	game();
 })
 
 $('#crystal4').click(function(event) {
 	myTotal = myTotal + crystalFour;
+	$('#empty-div2').html(myTotal);
 	game();
 })
 
-});
+
 
 
 var reset = function() {
-	var crystalOne = Math.floor(Math.random * 12 + 1);
-	var crystalTwo = Math.floor(Math.random * 12 + 1);
-	var crystalThree = Math.floor(Math.random * 12 + 1);
-	var crystalFour = Math.floor(Math.random * 12 + 1);
+
+	myTotal= 0;
+	var crystalOne = Math.floor((Math.random * 12) + 1);
+	var crystalTwo = Math.floor((Math.random * 12) + 1);
+	var crystalThree = Math.floor((Math.random * 12) + 1);
+	var crystalFour = Math.floor((Math.random * 12) + 1);
 	updateTotal();
+	
 
-    myTotal = 0;
-	var computerChoices = Math.floor(Math.random() * 101 + 19);
+	var computerChoices = Math.floor((Math.random() * 101) + 19);
 
-	$('#empty-div1').empty();
-	$('#empty-div1').append(computerChoices);
+	$('#empty-div1').html(computerChoices);
 
-	$('#empty-div2').empty();
-	$('#empty-div2').append(myTotal);
+	$('#empty-div2').html(myTotal);
 }
 
-
-
+});
 
