@@ -1,68 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Crystal Game</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald|UnifrakturCook:700" rel="stylesheet">
-
 </head>
 
 <body>
-	
-
-	<h1>Crystal Collector</h1>
-	<br><br>
-	<p id="description">At the start of this game, the computer will generate a random number between 19-120. <br>
-	<br>
-	When you click on a crystal it will generate a random number, when you click on another <br><br>
-    crystal that will also generate a random number and add it to the previous updated number. <br>
+    <h1>Crystal Collector</h1>
     <br>
-	The goal of this game is to match your number with the computer generated number.<br><br>
-	If you match the number, YOU WIN! If you go over that number then YOU LOSE!
-	</p>
-
-	<br>
-
-	<div class="row">
-	<div class="col-md-4">
-	<div id="empty-div1"></div>
-	<div id="winloss">
-        <ul style="list-style-type:none">
-            <li class="list-group-item">
-                <p id="winning">Wins: </p>
-            </li>
-            <li class="list-group-item">
-                <p id="losing">Losses: </p>
-            </li>
-            </ul>
-     </div>
-  </div>
-</div>
-
-
-
-	<br><br>
-
-	<div class="images">
-	<img id="crystal1" src="./assets/images/diamond.jpg" alt="diamond" height="70px" width="70px">
-	<img id="crystal2" src="./assets/images/amber.jpg" alt="amber" height="70px" width="70px">
-	<img id="crystal3" src="./assets/images/Citrine.jpg" alt="Citrine" height="70px" width="70px">
-	<img id="crystal4" src="./assets/images/garnet.jpg" alt="garnet" height="70px" width="70px">
-	</div>
-
-	<br>
-
-	<p id="your-total">Your total score is</p>
-
-
-	<div id="empty-div2"></div>
-
+    <br>
+    <p id="description">At the start of this game, the computer will generate a random number between 19-120.
+        <br>
+        <br> When you click on a crystal it will generate a random number, when you click on another
+        <br>
+        <br> crystal that will also generate a random number and add it to the previous updated number.
+        <br>
+        <br> The goal of this game is to match your number with the computer generated number.
+        <br>
+        <br> If you match the number, YOU WIN! If you go over that number then YOU LOSE!
+    </p>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div id="empty-div1"></div>
+            <div id="winloss">
+                <ul style="list-style-type:none">
+                    <li class="list-group-item">
+                        <p id="winning">Wins: </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p id="losing">Losses: </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="images">
+        <img id="crystal1" src="./assets/images/diamond.jpg" alt="diamond" height="70px" width="70px">
+        <img id="crystal2" src="./assets/images/amber.jpg" alt="amber" height="70px" width="70px">
+        <img id="crystal3" src="./assets/images/Citrine.jpg" alt="Citrine" height="70px" width="70px">
+        <img id="crystal4" src="./assets/images/garnet.jpg" alt="garnet" height="70px" width="70px">
+    </div>
+    <br>
+    <p id="your-total">Your total score is</p>
+    <div id="empty-div2"></div>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-
 </body>
-</html>
 
+</html>
