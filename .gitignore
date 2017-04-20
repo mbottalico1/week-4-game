@@ -1,0 +1,5 @@
+# Don't commit hidden files created by Mac OSX
+# See Documentation Below:
+# https://help.github.com/articles/ignoring-files/
+# https://git-scm.com/docs/gitignore
+.DS_Store
