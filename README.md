@@ -1,1 +1,3 @@
 # week-4-game
+
+	This game is called Crystal Collector. There are four crystals. Each one will generate a random number when clicked on. Your goal is to have your number match up with the computer generated number at the top. If you match it, you win. If you get anything above that number, you lose. When you win/lose, the game will reset and both the computer generated number and the crystals will have new values.
